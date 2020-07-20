@@ -14,8 +14,19 @@
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
-  console.log("I don't know what to do!");
-}
+  if (hungry === true && availableTime < 20){
+    console.log('Then pick something up and eat in back in the Lab or in the kitchen, where you can get to know your fellow classmates.')
+  }
+  else if(hungry === true && availableTime >= 20 && availableTime < 30 ){
+console.log('Ah man, you deserve a break and could try a place in Gastown!')
+  }
+  else if(hungry === true && availableTime > 30){
+    console.log('Dude,dont forget that this is a bootcamp after all and you should probably reconsider.')
+  }
+  else{
+    console.log('Well, time to code! No excuses!')
+  }
+} 
 
 
 /*
